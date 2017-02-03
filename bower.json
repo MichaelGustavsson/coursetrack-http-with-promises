@@ -1,0 +1,20 @@
+{
+  "name": "coursetrack",
+  "description": "QuickStart package.json from the documentation, supplemented with testing support",
+  "main": "",
+  "authors": [
+    "Storskorpan <michael.gustavsson@skaftoskorpan.se>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}

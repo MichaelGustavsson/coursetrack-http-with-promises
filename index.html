@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Course Track</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="content/css/app.css">
+  <!-- Polyfill(s) for older browsers -->
+  <script src="node_modules/core-js/client/shim.min.js"></script>
+  <script src="node_modules/zone.js/dist/zone.js"></script>
+  <script src="node_modules/systemjs/dist/system.src.js"></script>
+  <script src="systemjs.config.js"></script>
+  <script>
+    System.import('app').catch(function (err) {
+      console.error(err);
+    });
+
+  </script>
+</head>
+
+<body>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#coursetrack-navbar-collapse-1"
+          aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          </button>
+          <a href="#" class="navbar-brand">Course Track</a>
+      </div>
+      <!--menus items-->
+      <div class="collapse navbar-collapse" id="coursetrack-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li><a href="" >Dashboard</a></li>
+          <li><a href="" >Courses</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <section class="container">
+    <coursetrack-app>Loading AppComponent content here ...</coursetrack-app>
+  </section>
+  <nav class="navbar navbar-inverse navbar-fixed-bottom">
+    <div class="container-fluid">
+      <ul class="nav navbar-nav">
+        <li><a href="#">&copy;Learning Tree International</a></li>
+      </ul>
+    </div>
+  </nav>
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

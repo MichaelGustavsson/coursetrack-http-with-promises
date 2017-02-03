@@ -1,0 +1,18 @@
+<table class="table table-bordered table-striped table-hovered">
+  <thead class="table-heading">
+    <tr>
+      <th>Coursenumber</th>
+      <th>Title</th>
+      <th>Duration</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let c of courses" (click)="onSelect(c)" [class.selected]="c === course">
+      <td>{{c.courseNumber}}</td>
+      <td>{{c.title}}</td>
+      <td>{{c.duration}}</td>
+    </tr>
+  </tbody>
+</table>
+
+<course-detail [course]="course"></course-detail>
